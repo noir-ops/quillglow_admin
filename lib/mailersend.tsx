@@ -15,9 +15,6 @@ export interface SendEmailOptions {
   inReplyTo?: string
   references?: string
 }
-
-
-
 export async function sendEmail(options: SendEmailOptions) {
   try {
     const sentFrom = new Sender(
